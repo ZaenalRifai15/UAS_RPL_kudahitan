@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda</title>
+    <link rel="stylesheet" href="{% static 'myapp/css/beranda.css' %}">
+</head>
+<body>
+  <header>
+    <div class="logo">HoneyMoney</div>
+    <div class="welcome">
+      <h1>Hallo, <span class="highlight">user</span></h1>
+      <p>Selamat datang di HoneyMoney</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="financial-records">
+      <h2>Catatan Keuangan</h2>
+      <ul>
+        <li><span class="icon income">💰</span> Di Kasih Mamah - 24 Nov 2023 - Rp.100.000,00</li>
+        <li><span class="icon expense">💸</span> Beli Cilok - 24 Nov 2023 - Rp.100.000,00</li>
+        <li><span class="icon income">💰</span> THR Dari Nenek - 24 Nov 2023 - Rp.100.000,00</li>
+        <li><span class="icon expense">💸</span> Beli Baju - 24 Nov 2023 - Rp.100.000,00</li>
+      </ul>
+      <div class="legend">
+        <span>💸 Pengeluaran</span>
+        <span>💰 Pemasukan</span>
+      </div>
+    </section>
+
+    <section class="chart">
+      <h2>Grafik</h2>
+      <div class="graph-placeholder">📈</div>
+    </section>
+
+    <section class="input-section">
+      <div class="form">
+        <h3>Catat <span class="highlight">Pemasukan</span></h3>
+        <label>Jumlah<br /><input type="text" placeholder="Rp." /></label>
+        <label>Keterangan<br /><input type="text" /></label>
+      </div>
+
+      <div class="form">
+        <h3>Catat <span class="highlight">Pengeluaran</span></h3>
+        <label>Jumlah<br /><input type="text" placeholder="Rp." /></label>
+        <label>Keterangan<br /><input type="text" /></label>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
